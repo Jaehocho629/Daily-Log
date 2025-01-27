@@ -1,0 +1,39 @@
+<div id="app">
+  <h1>일지 작성</h1>
+  <form id="logForm">
+    <label>
+      시간 (시:분:초):
+      <input type="text" id="time" placeholder="예: 13:45 또는 13:45:15" required>
+    </label>
+    <label>
+      대분류:
+      <select id="mainCategory" required>
+        <option value="MNG">MNG</option>
+        <option value="N.O">N.O</option>
+        <option value="재난정보">재난정보</option>
+        <option value="중계차">중계차</option>
+      </select>
+    </label>
+    <label>
+      소분류 1:
+      <select id="subCategory1" required></select>
+    </label>
+    <label>
+      소분류 2:
+      <select id="subCategory2"></select>
+    </label>
+    <label>
+      내용:
+      <input type="text" id="content" required>
+    </label>
+    <button type="submit">추가</button>
+  </form>
+
+  <h2>일지 목록</h2>
+  <ul id="logList"></ul>
+
+  <h2>카테고리별 카운트</h2>
+  <ul id="categoryCount"></ul>
+
+  <button id="downloadBtn">TXT 파일로 다운로드</button>
+</div>
